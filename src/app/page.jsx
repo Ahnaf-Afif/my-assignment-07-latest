@@ -8,7 +8,6 @@ import Context from "@/context/context";
 export default function Home() {
   return (
     <div>
-      <Navbar></Navbar>
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>

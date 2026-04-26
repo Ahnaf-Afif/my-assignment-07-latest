@@ -6,7 +6,6 @@ import { Video } from "lucide-react";
 
 import { useContext, useState } from "react";
 import { MsgData } from "@/context/context";
-import { MsgData } from "@/context/context";
 
 export default function TimelineBox() {
   const { message } = useContext(MsgData);
