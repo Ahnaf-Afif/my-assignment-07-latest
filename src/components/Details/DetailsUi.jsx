@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-// import { Message_data } from "@/context/context";
+import { MsgData } from "@/context/context";
 
 import React from "react";
 import {
@@ -37,7 +37,7 @@ function SideButton({ icon: Icon, label, danger = false }) {
 }
 
 export default function DetailsUi({ friend }) {
-  //   const { setMessage } = useContext(Message_data);
+  const { setMessage } = useContext(MsgData);
 
   let firstTag = friend.tags[0];
 

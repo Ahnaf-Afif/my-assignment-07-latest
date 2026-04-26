@@ -6,10 +6,6 @@ const Page = async ({ params }) => {
 
   const friend = data.dashboard.friends.find((item) => String(item.id) === id);
 
-  //   if (!friend) {
-  //     return <div>Friend not found</div>;
-  //   }
-
   return <DetailsUi friend={friend} />;
 };
 
