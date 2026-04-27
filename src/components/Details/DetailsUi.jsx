@@ -2,6 +2,10 @@
 
 import { useContext } from "react";
 import { MsgData } from "@/context/context";
+import { ToastContainer, toast } from "react-toastify";
+const call = () => toast("The Call Started!");
+const video = () => toast("The Video Started!");
+const text = () => toast("The Text Started!");
 
 import React from "react";
 import {
@@ -185,6 +189,7 @@ export default function DetailsUi({ friend }) {
                 <button
                   onClick={() => {
                     sendData("Call");
+                    call();
                   }}
                   className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100"
                 >
@@ -195,6 +200,7 @@ export default function DetailsUi({ friend }) {
                 <button
                   onClick={() => {
                     sendData("Text");
+                    text();
                   }}
                   className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100"
                 >
@@ -205,12 +211,14 @@ export default function DetailsUi({ friend }) {
                 <button
                   onClick={() => {
                     sendData("Video");
+                    video();
                   }}
                   className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100"
                 >
                   <Video className="mb-3 h-6 w-6" />
                   <span className="text-sm font-medium">Video</span>
                 </button>
+                <ToastContainer />
               </div>
             </div>
           </div>
