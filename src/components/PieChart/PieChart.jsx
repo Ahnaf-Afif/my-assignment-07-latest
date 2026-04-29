@@ -1,6 +1,6 @@
 "use client";
 
-import { Pie, PieChart } from "recharts";
+import { Pie, PieChart, Tooltip } from "recharts";
 import { RechartsDevtools } from "@recharts/devtools";
 import { useContext, useState } from "react";
 import { MsgData } from "@/context/context";
@@ -29,6 +29,13 @@ export default function PieChartWithPaddingAngle({ isAnimationActive = true }) {
       }}
       responsive
     >
+      <Tooltip
+        formatter={(value, name, props) => {
+          const label = props.payload.name;
+          return [`${value} times`, label];
+        }}
+      />
+
       <Pie
         data={data}
         innerRadius="80%"

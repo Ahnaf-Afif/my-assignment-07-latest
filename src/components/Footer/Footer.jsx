@@ -3,9 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-10 mt-20">
-        <aside>
-          <p className="font-bold text-6xl text-center">KeenKeeper</p>
+      <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10 mt-20">
+        <aside className="">
+          <p className="font-bold text-4xl md:text-6xl text-center ">
+            KeenKeeper
+          </p>
           <p className="opacity-80">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.

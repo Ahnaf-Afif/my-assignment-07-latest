@@ -15,8 +15,8 @@ const Navbar = () => {
       "
       >
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost text-xl">
-            KeenKeeper
+          <Link href="/" className="btn btn-ghost text-3xl font-bold">
+            Keen<span className="text-[#244D3F]">Keeper</span>
           </Link>
         </div>
         <div className="flex-none">
@@ -25,7 +25,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className={pathname === "/" ? "bg-blue-500" : ""}
+                  className={pathname === "/" ? "bg-[#244D3F] text-white" : ""}
                 >
                   <House />
                   Home
@@ -34,7 +34,9 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/Timeline"
-                  className={pathname === "/Timeline" ? "bg-blue-500 " : ""}
+                  className={
+                    pathname === "/Timeline" ? "bg-[#244D3F] text-white" : ""
+                  }
                 >
                   <History />
                   Timeline
@@ -43,7 +45,9 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/Stats"
-                  className={pathname === "/Stats" ? "bg-blue-500 " : ""}
+                  className={
+                    pathname === "/Stats" ? "bg-[#244D3F] text-white" : ""
+                  }
                 >
                   <ChartNoAxesColumnDecreasing />
                   Stats
@@ -57,7 +61,9 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/"
-                      className={pathname === "/" ? "bg-blue-500" : ""}
+                      className={
+                        pathname === "/" ? "bg-[#244D3F] text-white" : ""
+                      }
                     >
                       Home
                     </Link>
@@ -65,7 +71,11 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/Timeline"
-                      className={pathname === "/Timeline" ? "bg-blue-500 " : ""}
+                      className={
+                        pathname === "/Timeline"
+                          ? "bg-[#244D3F] text-white"
+                          : ""
+                      }
                     >
                       Timeline
                     </Link>
@@ -73,7 +83,9 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/Stats"
-                      className={pathname === "/Stats" ? "bg-blue-500 " : ""}
+                      className={
+                        pathname === "/Stats" ? "bg-[#244D3F] text-white" : ""
+                      }
                     >
                       Stats
                     </Link>

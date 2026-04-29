@@ -14,7 +14,7 @@ export default function TimelineBox() {
   const today = new Date();
 
   return (
-    <div>
+    <div className="">
       <h1 className="mt-5 text-3xl font-bold text-center mb-3">Timeline</h1>
       <div className="join flex justify-center">
         <div></div>
