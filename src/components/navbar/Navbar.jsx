@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { House } from "lucide-react";
+import { History } from "lucide-react";
+import { ChartNoAxesColumnDecreasing } from "lucide-react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -24,6 +27,7 @@ const Navbar = () => {
                   href="/"
                   className={pathname === "/" ? "bg-blue-500" : ""}
                 >
+                  <House />
                   Home
                 </Link>
               </li>
@@ -32,6 +36,7 @@ const Navbar = () => {
                   href="/Timeline"
                   className={pathname === "/Timeline" ? "bg-blue-500 " : ""}
                 >
+                  <History />
                   Timeline
                 </Link>
               </li>
@@ -40,6 +45,7 @@ const Navbar = () => {
                   href="/Stats"
                   className={pathname === "/Stats" ? "bg-blue-500 " : ""}
                 >
+                  <ChartNoAxesColumnDecreasing />
                   Stats
                 </Link>
               </li>
@@ -49,13 +55,28 @@ const Navbar = () => {
                 <summary>Pages</summary>
                 <ul className="bg-base-100 rounded-t-none p-2">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link
+                      href="/"
+                      className={pathname === "/" ? "bg-blue-500" : ""}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <a>Timeline</a>
+                    <Link
+                      href="/Timeline"
+                      className={pathname === "/Timeline" ? "bg-blue-500 " : ""}
+                    >
+                      Timeline
+                    </Link>
                   </li>
                   <li>
-                    <a>Stats</a>
+                    <Link
+                      href="/Stats"
+                      className={pathname === "/Stats" ? "bg-blue-500 " : ""}
+                    >
+                      Stats
+                    </Link>
                   </li>
                 </ul>
               </details>
