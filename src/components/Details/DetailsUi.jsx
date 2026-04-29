@@ -119,25 +119,19 @@ export default function DetailsUi({ friend }) {
 
             <div className="space-y-3">
               <div>
-                <button
-                  className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold`}
-                >
+                <button className="flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold cursor-pointer hover:bg-slate-300 hover:text-slate-800">
                   <BellOff className="h-4 w-4" />
                   <span>Snooze for {friend.actions.snoozeDays} days</span>
                 </button>
               </div>
               <div>
-                <button
-                  className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold`}
-                >
+                <button className="flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold cursor-pointer hover:bg-slate-300 hover:text-slate-800">
                   <Archive className="h-4 w-4" />
                   <span>Archive</span>
                 </button>
               </div>
-              <div>
-                <button
-                  className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold border-red-700 text-red-700`}
-                >
+              <div className="cursor-pointer">
+                <button className="flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold border-red-700 text-red-700 cursor-pointer hover:bg-red-700 hover:text-white">
                   <Trash2 className="h-4 w-4" />
                   <span>Delete</span>
                 </button>
@@ -182,7 +176,7 @@ export default function DetailsUi({ friend }) {
                   </p>
                 </div>
 
-                <button className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50">
+                <button className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 cursor-pointer">
                   <Pencil className="h-4 w-4" />
                   Edit
                 </button>
@@ -190,7 +184,7 @@ export default function DetailsUi({ friend }) {
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <h3 className="mb-4 text-sm font-semibold text-slate-700">
+              <h3 className="mb-4 text-sm font-semibold text-slate-700 ">
                 Quick Check-In
               </h3>
 
@@ -200,7 +194,7 @@ export default function DetailsUi({ friend }) {
                     sendData("Call");
                     call();
                   }}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100"
+                  className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100 cursor-pointer"
                 >
                   <Phone className="mb-3 h-6 w-6" />
                   <span className="text-sm font-medium">Call</span>
@@ -211,7 +205,7 @@ export default function DetailsUi({ friend }) {
                     sendData("Text");
                     text();
                   }}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100"
+                  className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100 cursor-pointer"
                 >
                   <MessageSquare className="mb-3 h-6 w-6" />
                   <span className="text-sm font-medium">Text</span>
@@ -222,7 +216,7 @@ export default function DetailsUi({ friend }) {
                     sendData("Video");
                     video();
                   }}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100"
+                  className="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-8 text-slate-600 hover:bg-slate-100 cursor-pointer"
                 >
                   <Video className="mb-3 h-6 w-6" />
                   <span className="text-sm font-medium">Video</span>
