@@ -25,21 +25,6 @@ const statusColor = {
   "Need Attention": "bg-red-500 text-white",
 };
 
-function SideButton({ icon: Icon, label, danger = false }) {
-  return (
-    <button
-      className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium ${
-        danger === true
-          ? "border-red-200 text-red-500 hover:bg-red-50"
-          : "border-slate-200 text-slate-600 hover:bg-slate-50"
-      }`}
-    >
-      <Icon className="h-4 w-4" />
-      <span>{label}</span>
-    </button>
-  );
-}
-
 export default function DetailsUi({ friend }) {
   const { setMessage } = useContext(MsgData);
 
@@ -133,12 +118,30 @@ export default function DetailsUi({ friend }) {
             </div>
 
             <div className="space-y-3">
-              <SideButton
-                icon={BellOff}
-                label={`Snooze for ${friend.actions.snoozeDays} days`}
-              />
-              <SideButton icon={Archive} label="Archive" />
-              <SideButton icon={Trash2} label="Delete" danger={true} />
+              <div>
+                <button
+                  className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold`}
+                >
+                  <BellOff className="h-4 w-4" />
+                  <span>Snooze for {friend.actions.snoozeDays} days</span>
+                </button>
+              </div>
+              <div>
+                <button
+                  className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold`}
+                >
+                  <Archive className="h-4 w-4" />
+                  <span>Archive</span>
+                </button>
+              </div>
+              <div>
+                <button
+                  className={`flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-bold border-red-700 text-red-700`}
+                >
+                  <Trash2 className="h-4 w-4" />
+                  <span>Delete</span>
+                </button>
+              </div>
             </div>
           </div>
 
