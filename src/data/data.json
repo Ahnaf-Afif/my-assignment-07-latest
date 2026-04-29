@@ -60,7 +60,7 @@
           "video": "emma.wilson@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 7,
           "archived": false,
           "deleted": false
         },
@@ -91,7 +91,7 @@
           "video": "lisa.nakamura@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 20,
           "archived": false,
           "deleted": false
         },
@@ -122,7 +122,7 @@
           "video": "james.wright@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 23,
           "archived": false,
           "deleted": false
         },
@@ -153,7 +153,7 @@
           "video": "sophia.martinez@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 28,
           "archived": false,
           "deleted": false
         },
@@ -184,7 +184,7 @@
           "video": "noah.johnson@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 35,
           "archived": false,
           "deleted": false
         },
@@ -215,7 +215,7 @@
           "video": "olivia.chen@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 40,
           "archived": false,
           "deleted": false
         },
@@ -246,7 +246,7 @@
           "video": "ethan.carter@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 32,
           "archived": false,
           "deleted": false
         },
@@ -277,7 +277,7 @@
           "video": "mia.anderson@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 22,
           "archived": false,
           "deleted": false
         },
@@ -308,7 +308,7 @@
           "video": "liam.brown@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 24,
           "archived": false,
           "deleted": false
         },
@@ -339,7 +339,7 @@
           "video": "ava.thompson@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 24,
           "archived": false,
           "deleted": false
         },
@@ -370,7 +370,7 @@
           "video": "benjamin.lee@example.com"
         },
         "actions": {
-          "snoozeDays": 14,
+          "snoozeDays": 34,
           "archived": false,
           "deleted": false
         },
