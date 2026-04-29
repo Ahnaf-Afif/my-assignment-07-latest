@@ -44,8 +44,11 @@ export default function DetailsUi({ friend }) {
   const { setMessage } = useContext(MsgData);
 
   let firstTag = friend.tags[0];
+  let secondTag = "";
 
-  let secondTag = friend.tags[1];
+  if (friend.tags.length > 1) {
+    secondTag = friend.tags[1];
+  }
 
   let nowStatColor = "bg-slate-200 text-slate-700";
   if (statusColor[friend.status]) {
@@ -130,7 +133,10 @@ export default function DetailsUi({ friend }) {
             </div>
 
             <div className="space-y-3">
-              <SideButton icon={BellOff} label={friend.actions.snoozeDays} />
+              <SideButton
+                icon={BellOff}
+                label={`Snooze for ${friend.actions.snoozeDays} days`}
+              />
               <SideButton icon={Archive} label="Archive" />
               <SideButton icon={Trash2} label="Delete" danger={true} />
             </div>
